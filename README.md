@@ -26,7 +26,7 @@ _The following steps asume you have already setup your typescript project_
 }
 ```
 
--   if you already have a transfomer, you can simply add it, like: `"plugins": [{ "transform": "@moddota/dota-lua-types/transformer" }, { "transform": "transformer/transform" }]`
+-   if you already have a transfomer, you can simply add it, like: `"plugins": [{ "transform": "@moddota/dota-lua-types/transformer" }, { "transform": "dota_ability_transformer/transform" }]`
 
 -   you also need to add the type definitions to your `tsconfig.json`:
 
@@ -40,7 +40,7 @@ _The following steps asume you have already setup your typescript project_
 
 -   if you already have a types defined, you can simply add it, like: `"types": ["@moddota/dota-lua-types/normalized", "dota_ability_transformer"],`
 
-That's it. The transformer is now fully functional and will update KV ability automatically.
+That's it! The transformer is now fully functional and will update KV ability automatically.
 
 # How to use it
 
@@ -50,4 +50,8 @@ _An example on how to use it can be found under: `src/vscripts/abilities/heroes/
 -   Make sure you register the ability with the `@registerAbility()` decorator
 -   This will already create a new empty ability
 
--   To change the core properties of the ability, simply set the `BaseProperties` property on your ability class
+-   Now you can add properties to your ability class to define its features:
+
+`BaseProperties`: Defines basic KV values for an ability. This includes the abilities behavior, texture, etc.
+
+`SpecialValues`: Defines special values of your ability. Any name can be chosen and the value can either be a **number**, an **array of numbers** or an **special object**.
