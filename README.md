@@ -106,9 +106,12 @@ You can create a file named `.abilityTransformerrc.json` in your root directory 
 
 ```json
 {
-	"modularization": "folder" //default
-	// folder: create one .kv file for each folder the source file is in
-	// file: create one .kv file for each source file
-	// none: create a single .kv file for all abilities
+	"modularization": "folder"
 }
 ```
+
+The default is `folder` and the options are:
+
+-   `folder`: create one .kv file for each folder the source file is in
+-   `file`: create one .kv file for each source file
+-   `none`: create a single .kv file for all abilities
