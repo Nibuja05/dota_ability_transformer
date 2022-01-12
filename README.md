@@ -22,7 +22,7 @@ _The following steps asume you have already setup your typescript project_
 ```json
 {
 	"compilerOptions": {
-		"plugins": [{ "transform": "transformer/transform" }]
+		"plugins": [{ "transform": "dota_ability_transformer/transform" }]
 	}
 }
 ```
@@ -53,17 +53,19 @@ _An example on how to use it can be found under: `src/vscripts/abilities/heroes/
 
 -   Now you can add properties to your ability class to define its features:
 
-`BaseProperties` Defines basic KV values for an ability. This includes the abilities behavior, texture, etc.
+`BaseProperties` - Defines basic KV values for an ability. This includes the abilities behavior, texture, etc.
 
-`SpecialValues` Defines special values of your ability. Any name can be chosen and the value can either be a **number**, an **array of numbers** or an **special object**.
+`SpecialValues` - Defines special values of your ability. Any name can be chosen and the value can either be a **number**, an **array of numbers** or an **special object**.
 
-`CustomProperties` Defines custom properties you want to add to your ability KV.
+`CustomProperties` - Defines custom properties you want to add to your ability KV.
 
-`SkipAbility` If this is true, the transformer will skip this ability and generate no KV file for it.
+`SkipAbility` - If this is true, the transformer will skip this ability and generate no KV file for it.
 
 # Example usage
 
-Here is an example on how to use it on an ability class:
+Here is an example on how to use it on an ability class.
+
+**Please note, that you can only use enums and literal values. As the code does not run on lua side, all computed values are ignored!**
 
 ```ts
 @registerAbility()
