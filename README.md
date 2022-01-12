@@ -99,3 +99,16 @@ export class meepo_earthbind_ts_example extends BaseAbility {
 
 	//Normal ability functions will follow...
 ```
+
+# Config your transformer
+
+You can create a file named `.abilityTransformerrc.json` in your root directory to set the settings for the transformer.
+
+```json
+{
+	"modularization": "folder" //default
+	// folder: create one .kv file for each folder the source file is in
+	// file: create one .kv file for each source file
+	// none: create a single .kv file for all abilities
+}
+```
