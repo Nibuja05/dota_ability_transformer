@@ -4,6 +4,8 @@ import { BaseAbility, registerAbility } from "../../../lib/dota_ts_adapter";
 export class meepo_earthbind_ts_example extends BaseAbility {
 	particle?: ParticleID;
 
+	myProperty = 5;
+
 	SpecialValues: AbilitySpecials = {
 		duration: 2,
 		radius: 220,
@@ -24,6 +26,9 @@ export class meepo_earthbind_ts_example extends BaseAbility {
 		CastPoint: 0.3,
 		Cooldown: 2,
 		ManaCost: 120,
+	};
+	CustomProperties: AbilityCustomProperties = {
+		MyVar: 5,
 	};
 
 	GetCooldown() {
