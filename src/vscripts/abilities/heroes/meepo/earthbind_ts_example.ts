@@ -4,7 +4,7 @@ import { BaseAbility, registerAbility } from "../../../lib/dota_ts_adapter";
 export class meepo_earthbind_ts_example extends BaseAbility {
 	particle?: ParticleID;
 
-	SkipAbility: boolean = true;
+	SkipAbility: boolean = false;
 	SpecialValues: AbilitySpecials = {
 		duration: 2,
 		radius: 220,

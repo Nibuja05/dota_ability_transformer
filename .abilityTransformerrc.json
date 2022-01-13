@@ -1,3 +1,5 @@
 {
-	"modularization": "file"
+	"modularization": "folder",
+	"debug": false,
+	"strict": "warn"
 }

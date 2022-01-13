@@ -106,12 +106,22 @@ You can create a file named `.abilityTransformerrc.json` in your root directory 
 
 ```json
 {
-	"modularization": "folder"
+	"modularization": "folder",
+	"strict": "warn",
+	"debug": false
 }
 ```
 
-The default is `folder` and the options are:
+The default for `modularization` is `folder` and the options are:
 
 -   `folder`: create one .kv file for each folder the source file is in
 -   `file`: create one .kv file for each source file
 -   `none`: create a single .kv file for all abilities
+
+The default for `strict` is `warn` and the options are:
+
+-   `off`: ignore abilities without properties without any notice
+-   `warn`: print a warn message in the console for every ability without properties
+-   `error`: throw an error for every ability without properties
+
+The default for `debug` is `false`. Enable this option to see debug prints in the console
