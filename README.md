@@ -108,7 +108,8 @@ You can create a file named `.abilityTransformerrc.json` in your root directory 
 {
 	"modularization": "folder",
 	"strict": "warn",
-	"debug": false
+	"debug": false,
+	"disable": false
 }
 ```
 
@@ -125,3 +126,5 @@ The default for `strict` is `warn` and the options are:
 -   `error`: throw an error for every ability without properties
 
 The default for `debug` is `false`. Enable this option to see debug prints in the console
+
+The default for `disable` is `false`. Enable this option to skip all ability transformation completly

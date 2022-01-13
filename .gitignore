@@ -1,7 +1,12 @@
-node_modules
+!node_modules
+
+node_modules/*
+!node_modules/dota_ability_transformer/
 
 /content/panorama/scripts/custom_game/**/*.js
 /game/scripts/vscripts/**/*.lua
+
+.editorconfig
 
 # Dota 2 stuff
 *.bin
