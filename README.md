@@ -16,6 +16,7 @@ It is also recommended to use VSCode, not only because of its internal support o
 
 _The following steps asume you have already setup your typescript project_
 
+-   If you haven't, install this transformer as [npm module](https://www.npmjs.com/package/dota_ability_transformer): `npm i dota_ability_transformer`
 -   Find your `tsconfig.json` in your vscripts source directory
 -   Add a new transformer as plugin:
 
