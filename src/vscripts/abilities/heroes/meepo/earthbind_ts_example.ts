@@ -23,8 +23,9 @@ export class meepo_earthbind_ts_example extends BaseAbility {
 		Sound: "Hero_Meepo.Earthbind.Cast",
 		CastRange: 1250,
 		CastPoint: 0.3,
-		Cooldown: 2,
-		ManaCost: 120,
+		Cooldown: "cooldown",
+		ManaCost: [120, 130, 140, 150],
+		Type: AbilityTypes.BASIC,
 	};
 	CustomProperties: AbilityCustomProperties = {
 		MyVar: 5,

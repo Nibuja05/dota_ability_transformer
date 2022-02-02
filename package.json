@@ -10,7 +10,7 @@
 		"dev": "run-p dev:*",
 		"dev:panorama": "tsc --project src/panorama/tsconfig.json --watch",
 		"dev:vscripts": "tstl --project src/vscripts/tsconfig.json --watch",
-		"dev:transform": "tsc --project node_modules/dota_ability_transformer/tsconfig.json --watch"
+		"tdev": "tsc --project node_modules/dota_ability_transformer/tsconfig.json --watch"
 	},
 	"devDependencies": {
 		"@moddota/dota-lua-types": "^4.13.0",
